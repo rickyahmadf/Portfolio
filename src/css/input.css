@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar {
+    @apply w-6 h-14 flex bg-primary justify-center items-center rounded rounded-t-xl transition duration-300 z-40;
+  }
+  .navbar-desktop {
+    @apply absolute top-0 right-5 block items-center bg-primary h-10  rounded-full opacity-95 z-30;
+  }
+}
