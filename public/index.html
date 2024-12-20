@@ -140,12 +140,12 @@
           <div class="w-full self-center px-4 lg:w-1/2 xl:pt-24 md:pt-24" data-aos="fade-right" data-aos-offset="500"
           data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <h1 class="text-base font-semibold lg:text-xl dark:text-white">Hello I'am <span class="block text-4xl font-bold text-primary lg:text-5xl dark:text-second">Ricky Ahmad</span></h1>
-            <h2 class="mt-2 text-lg font-semibold lg:text-2xl lg:-pt-1 dark:text-white">Student & <span class="text-second">Tech Learner 👨‍💻 </span></h2>
+            <h2 class="mt-2 mb-14 text-lg font-semibold lg:text-2xl lg:-pt-1 dark:text-white">Student & <span class="text-second">Tech Learner 👨‍💻 </span></h2> <br> <br>
             
 
             <a href="https://drive.google.com/drive/folders/1bcXFCTY0VtlBm_7oqyBKkiIIEwfK7inu?hl=id" class="px-8 py-4 bg-primary text-white font-semibold tracking-wider rounded-full hover:shadow-xl hover:opacity-95 transition duration-300 ease-in-out dark:hover:shadow-md dark:hover:shadow-white dark:bg-second">Download CV</a>
           </div>
-mb-10
+
           <div class="w-full self-end  px-4 lg:w-1/2 maxsm:mt-8" data-aos="zoom-in" data-aos-offset="500"
           data-aos-easing="ease-in-sine" data-aos-duration="900">
             <div class="relative mt-10 lg:mt-9 lg:right-0">
@@ -225,7 +225,7 @@ mb-10
         <div class="flex flex-wrap  justify-center">
           <div class="w-full mb-8 px-3 max-w-2xl xl:mr-20" data-aos="fade-down-right" data-aos-duration="1000">
             <h3 class="text-xl font-bold mb-2 text-second xl:text-3xl">Tentang Saya</h3>
-            <p class="text-sm text-slate-500 font-medium sm:text-[15px] md:text-lg">Hallo, nama saya Ricky Ahmad Faizal. I live in Majalengka, West Java, Indonesia. I'am student at Universitas Logistik & Bisnis Internasional. I was someone who has been interested in the world of computers and technology. I started learning programming yaaaa awal awal perkuliahan (2022) . Since then, i gradually improve my skill until now and will keep improving in the future and always explore new things. thank uuuuu</p>
+            <p class="text-sm text-slate-500 font-medium sm:text-[15px] md:text-lg">Hallo, nama saya Ricky Ahmad Faizal. I live in Majalengka, West Java, Indonesia. I'am student at Universitas Logistik & Bisnis Internasional. I was someone who has been interested in the world of computers and technology especially in Fullstack Developer. I started learning programming yaaaa awal awal perkuliahan (2022) . Since then, i gradually improve my skill until now and will keep improving in the future and always explore new things. thank uuuuu</p>
 
           </div>
 
@@ -314,8 +314,8 @@ mb-10
             <p class="font-medium text-base text-paragraf">Web ini dibuat untuk Mengelola dan Me-manage Asset di Laboratorium suatu Prodi di Universitas Logistik dan Bisnis Internasional<br>Web ini dibuat PHP, CodeIgniter3, Tailwind dan MySQL(database)</p>
 
             <div class="flex mt-4 gap-4">
-              <div class="bg-primary px-4 rounded-xl font-semibold cursor-pointer text-white hover:bg-second hover:text-primary"><a href="https://rickyahmadf.github.io/web-landingpage/">Demo</a></div>
-              <div class="bg-second px-4 rounded-xl font-semibold cursor-pointer hover:bg-primary hover:text-second"><a href="https://github.com/rickyahmadf/web-landingpage">Repo</a></div>
+              <div class="bg-primary px-4 rounded-xl font-semibold cursor-pointer text-white hover:bg-second hover:text-primary"><a href="#">Demo</a></div>
+              <div class="bg-second px-4 rounded-xl font-semibold cursor-pointer hover:bg-primary hover:text-second"><a href="https://github.com/rickyahmadf/Management-Asset-Project">Repo</a></div>
             </div>
           </div>
 
@@ -570,6 +570,17 @@ onload = function () {
     id.style.display = 'none';
   }, 5000);
 };
+
+const darkToggle = document.querySelector('#dark-toggle');
+const html = document.querySelector('html');
+
+darkToggle.addEventListener('click', function () {
+  if (darkToggle.checked) {
+    html.classList.add('dark');
+  } else {
+    html.classList.remove('dark');
+  }
+});
     </script>
   </body>
 </html>
